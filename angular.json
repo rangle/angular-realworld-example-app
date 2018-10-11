@@ -42,6 +42,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            },
+            "augury": {
+              "fileReplacements": [
+                {
+                  "replace": "src/main.ts",
+                  "with": "src/main.augury.ts"
+                }
+              ]
             }
           }
         },
@@ -53,6 +61,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ang2-conduit:build:production"
+            },
+            "augury": {
+              "browserTarget": "ang2-conduit:build:augury"
             }
           }
         },
