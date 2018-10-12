@@ -5,7 +5,12 @@ export class Ng2RealApp {
     return browser.get('/');
   }
 
-    getParagraphText() {
+  getParagraphText() {
     return element(by.css('.logo-font')).getText();
   }
+
+  getATagButton() {
+    return element(by.css('.sidebar .tag-list .tag-pill'));
+  }
+
 }

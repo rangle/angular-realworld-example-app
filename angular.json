@@ -50,6 +50,14 @@
                   "with": "src/main.augury.ts"
                 }
               ]
+            },
+            "augury-ut": {
+              "fileReplacements": [
+                {
+                  "replace": "src/main.ts",
+                  "with": "src/main.augury-ut.ts"
+                }
+              ]
             }
           }
         },
@@ -64,6 +72,9 @@
             },
             "augury": {
               "browserTarget": "ang2-conduit:build:augury"
+            },
+            "augury-ut": {
+              "browserTarget": "ang2-conduit:build:augury-ut"
             }
           }
         },
@@ -113,7 +124,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ang2-conduit:serve"
+            "devServerTarget": "ang2-conduit:serve:augury-ut"
           }
         },
         "lint": {
