@@ -28,8 +28,8 @@ describe('ng-demo App', () => {
       .then(_ => wait(2000)) // wait for data
       .then(_ => browser.executeScript('return auguryUT.finishMonitoringChangeDetection()'))
       .then((result: CDMonitoringResult) => {
-        expect(result.cdRuns.length).toBeLessThanOrEqual(4)
-        result.cdRuns.forEach(cd => expect(cd.runtime).toBeLessThanOrEqual(50))
+        expect(result.cdRuns.length).toBeLessThanOrEqual(4);
+        result.cdRuns.forEach(cd => expect(cd.runtime).toBeLessThanOrEqual(50));
       });
   });
 });
