@@ -6,7 +6,7 @@ function wait(milliseconds) {
 }
 
 interface CDMonitoringResult {
-  cdRuns: { runtime: number }[]
+  cdRuns: { runtime: number }[];
 }
 
 describe('ng-demo App', () => {
@@ -30,6 +30,6 @@ describe('ng-demo App', () => {
       .then((result: CDMonitoringResult) => {
         expect(result.cdRuns.length).toBeLessThanOrEqual(4)
         result.cdRuns.forEach(cd => expect(cd.runtime).toBeLessThanOrEqual(50))
-      })
+      });
   });
 });
